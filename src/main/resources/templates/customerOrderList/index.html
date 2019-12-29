@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>KEYS PIZZA</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link rel="stylesheet" type="text/css" href="../../css/customerorder.css">
+</head>
+
+<body>
+	<h1>Welcome to our Keys Pizza Site!</h1>
+	<h3>Order now to see our Pizza!</h3>
+	<p>Please use the form below to sign up to order pizza:</p>
+	<img src="../../images/pizza01.jpg" class="pizza1">
+	<img src="../../images/pizza3.jpg">
+
+ <form action="#" th:action="@{/}" th:object="${customerOrder}" method="post">
+    <table>
+	<tr>
+            <td>First Name:</td>
+	   <td><input type="text" th:field="*{firstName}" /></td>
+	</tr>
+	<tr>
+	    <td>Last Name:</td>
+	   <td><input type="text" th:field="*{lastName}" /></td>
+	</tr>
+	<tr>
+    	    <td>Email:</td>
+	   <td><input type="text" th:field="*{email}" /></td>
+	</tr>
+	<tr>
+	    <td>Phone Number:</td>
+	  <td><input type="text" th:field="*{phoneNumber}" /></td>
+	    
+	</tr>
+	<tr>
+	    <td>Time Of Order:</td>
+	   <td><input type="text" th:field="*{timeOfOrder}" /></td>
+	</tr>
+	<tr>
+	    <td>Number Of Order:</td>
+	    <td><input type="text" th:field="*{numberOfOrder}" /></td>
+	</tr>
+	
+	<tr>
+	    <td><button type="submit">Submit Your form</button></td>
+	</tr>
+    </table>
+</form>
+	
+
+</body>
+</html>

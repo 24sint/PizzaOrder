@@ -1,0 +1,39 @@
+body{
+	background-color: #14143d;
+}
+h1{
+	text-align: center;
+	text-shadow:  2px 2px  #f95c42;
+}
+h3,p{
+	text-align: center;
+	color: lime;
+	text-shadow: 1px 1px white;
+}
+img{
+	width: 250px;
+	margin-left: 17px;
+	border: 2px solid #14143d;
+	box-shadow: 3px 3px #444;  
+	
+}
+.pizza1{
+	margin-left: 220px;
+}
+form{
+	margin-left: 270px; 
+	margin-top: 30px;	 
+}
+td{
+	color:  #f95c42;
+}
+input{
+	padding: 5px 15px;
+	
+}
+button{
+	margin-top: 20px;
+	background-color: lightgreen;
+	padding: 5px;
+	border-radius: 20px;
+}
